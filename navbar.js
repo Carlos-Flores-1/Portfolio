@@ -3,7 +3,7 @@ function injectNavbar(options = {}) {
   const brand = options.brand || 'CF';
   const links = options.links || [
     { text: 'Home', href: 'index.html' },
-    { text: 'Resume', href: 'Carlos_Flores_Resume.pdf', target: '_blank'},
+    { text: 'Resume', href: 'Carlos.Flores.Resume.pdf', target: '_blank'},
   ];
   const nav = document.createElement('nav');
   nav.className = 'navbar';
