@@ -80,7 +80,7 @@ body, html {
 
 /* Adjust body to account for fixed navbar */
 body {
-    padding-top: 80px;
+    padding-top: 5rem;
 }
 
 /* Fade-in animations */
@@ -173,12 +173,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 48px;
-    margin-bottom: 0px;
+    margin-top: 3rem;
+    margin-bottom: 0;
 }
 
 .scroll-text {
-    margin-top: 10px;
+    margin-top: 0.625rem;
     font-family: 'Work Sans', sans-serif;
     font-size: 0.92rem;
     color: #1C49C2;
@@ -189,10 +189,10 @@ body {
 
 .mouse-svg {
     display: block;
-    margin: 8px auto 0 auto;
-    width: 20px;
-    height: 32px;
-    box-shadow: 0 2px 8px rgba(59,94,215,0.10);
+    margin: 0.5rem auto 0 auto;
+    width: 1.25rem;
+    height: 2rem;
+    box-shadow: 0 0.125rem 0.5rem rgba(59,94,215,0.10);
 }
 
 @media (max-width: 768px) {
@@ -235,16 +235,17 @@ body {
     
     .goals-layout {
         flex-direction: column;
-        gap: 1rem;
+        gap: 2.5rem;
     }
     
     .goals-title-section {
         flex: none;
+        text-align: center;
     }
     
     .goals-title {
         font-size: 2.5rem;
-        text-align: left;
+        text-align: center;
     }
     
     .title-dog-svg {
@@ -255,6 +256,21 @@ body {
 /* Large screens */
 @media (min-width: 1200px) {
     .content-container {
+        max-width: 1400px;
+        padding: 6rem 3rem;
+    }
+    
+    .goals-container {
+        max-width: 1400px;
+        padding: 6rem 3rem;
+    }
+    
+    .documentation-container {
+        max-width: 1400px;
+        padding: 6rem 3rem;
+    }
+    
+    .presentation-container {
         max-width: 1400px;
         padding: 6rem 3rem;
     }
@@ -304,21 +320,18 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding-top: 100vh;
-    padding-bottom: 5rem;
 }
 
 .goals-container {
     padding: 5rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
-    padding-bottom: 5rem;
 }
 
 .documentation-container {
     padding: 5rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
-    padding-bottom: 5rem;
     background: #f8f9ff;
 }
 
@@ -533,7 +546,6 @@ a {
     padding: 5rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
-    padding-bottom: 5rem;
 }
 
 .summary-description {
@@ -727,7 +739,6 @@ a {
     padding: 5rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
-    padding-bottom: 5rem;
 }
 
 .presentation-content {
@@ -776,6 +787,14 @@ a {
     }
     
     .marketing-analysis-container {
+        padding: 3rem 1rem;
+    }
+    
+    .goals-container {
+        padding: 3rem 1rem;
+    }
+    
+    .documentation-container {
         padding: 3rem 1rem;
     }
     
@@ -831,6 +850,7 @@ a {
 @media (min-width: 1200px) {
     .marketing-analysis-container {
         padding: 6rem 3rem;
+        max-width: 1400px;
     }
     
     .tab-button {
